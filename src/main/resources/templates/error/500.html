@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="container" style="max-width: 560px">
+  <div class="py-5 text-center">
+    <h2>500 오류 화면 - 스프링 부트 제공!</h2>
+  </div>
+
+  <div>
+    <p>오류 화면입니다</p>
+  </div>
+
+  <ul>
+    <li>오류정보</li>
+    <url>
+      <li th:text="|timestamp: ${timestamp}|"></li>
+      <li th:text="|path: ${path}|"></li>
+      <li th:text="|errors: ${errors}|"></li>
+      <li th:text="|exception: ${exception}|"></li>
+    </url>
+  </ul>
+
+  <hr class="my-4">
+</div>
+
+</body>
+</html>
